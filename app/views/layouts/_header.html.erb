@@ -25,11 +25,16 @@
             <li><%= link_to "Sign in", signin_path %></li>
           <% end %>
         </ul>
+
+<!--  custom by sean -->
         <% if current_user.nil? %>
           <li><%= link_to "current user is nil", root_path %></li>
         <% else %>
           <li><%= link_to "current user is not nil", root_path %></li>
         <% end %>
+<!-- end -->
+      
+
       </nav>
     </div>
   </div>
