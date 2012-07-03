@@ -7,7 +7,7 @@
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Help", help_path %></li>
           <% if signed_in? %>
-            <li><%= link_to "Users", '#' %></li>
+            <li><%= link_to "Users", users_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 Account <b class="caret"></b>
@@ -25,17 +25,7 @@
             <li><%= link_to "Sign in", signin_path %></li>
           <% end %>
         </ul>
-
-<!--  custom by sean -->
-        <% if current_user.nil? %>
-          <li><%= link_to "current user is nil", root_path %></li>
-        <% else %>
-          <li><%= link_to "current user is not nil", root_path %></li>
-        <% end %>
-<!-- end -->
-      
-
       </nav>
     </div>
   </div>
-</header>
+</header> 
